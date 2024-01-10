@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Faixa etária</title>
+        <h1>Faixa etária</h1>
+    </head>
+    <body>
+        <br>
+     <form>
+        <label for="idade" style="font-size: 25px;"> Idade:</label><br>
+        <input type="text" name="idade" id="idadeinput">
+        <input type="submit" value="submit" id="submitinput" onclick="getinputvalue()";>
+        <input type="reset">
+        
+     </form>
+
+
+        <script>
+       //* var Idade = prompt ('Qual é a tua Idade?') */ é só retirar as aspas de comentário
+
+    /*let submitinput;
+
+            if (submitinput < 2) {
+                print("tu és um bebé!");                
+            }  */
+
+            function getinputvalue(){
+
+                var inputvalue = document.getElementById("idadeinput").value;
+
+                alert('inputvalue')
+            }
+            
+        </script>
+
+
+    </body>
+</html>
+

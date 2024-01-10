@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="idadeid"></p>
+
+    <script>
+        let arrayofimages = [];
+        var idade = 15
+        let categoria;
+
+        
+
+        var imgArray = new Array();
+
+        imgArray[0] = new Image();
+        imgArray[0].src = 'imagens/bebe.jpg';
+
+        imgArray[1] = new Image();
+        imgArray[1].src = 'imagens/criança1.jpg';
+
+        imgArray[2] = new Image();
+        imgArray[2].src = 'images/adolescente1.jpg';
+
+        imgArray[3] = new Image();
+        imgArray[3].src = 'images/jovemadulto.jpg';
+
+        imgArray[4] = new Image();
+        imgArray[4].src = 'images/caprio1.jpg';
+ 
+        imgArray[5] = new Image();
+        imgArray[5].src = 'images/meiaidade.png';
+
+        imgArray[6] = new Image();
+        imgArray[6].src = 'images/idoso.jpg';
+
+        imgArray[7] = new Image();
+        imgArray[7].src = 'images/imortal.jpg';
+
+        imgArray[8] = new Image();
+        imgArray[8].src = 'images/lendario.jpg';
+
+
+
+        function InserirImagem ( url )  {
+        let imagem = document.createElement("imagem");
+        imagem.src= ("images/adolescente1.jpg" );
+        document.body.appendChild(imagem);
+
+
+
+ function display_image(src) {
+    var a = document.createElement("img");
+    a.src = "images/adolescente1.jpg";
+    document.body.appendChild(a);
+   }
+
+}
+
+
+
+
+        if (idade < 2) {
+            categoria = "bebé";
+            document.getElementById ("imagens").innerHTML = imgArray [0]
+            
+        } else  if (idade < 12) {
+            categoria = "criança";
+            document.getElementById ("imagens").innerHTML = imgArray [1]
+            
+            
+        } else if (idade <16){
+            categoria = "adolescente";
+            document.getElementById ("imagens").innerHTML = imgArray [2]
+            display_image ("images/adolescente1.jpg")
+
+        } else  if (idade < 18) {
+            categoria = "jovem adulto";
+            document.getElementById ("imagens").innerHTML = imgArray [3]
+            
+            
+        } else  if (idade < 50) {
+            categoria = "adulto";
+            document.getElementById ("imagens").innerHTML = imgArray [4]
+            
+            
+        } else  if (idade < 65) {
+            categoria = "adulto de meia idade";
+            document.getElementById ("imagens").innerHTML = imgArray [5]
+            
+            
+        } else  if (idade < 100) {
+            categoria = "idoso";
+            document.getElementById ("imagens").innerHTML = imgArray [6]
+            
+            
+        } else  if (idade < 130) {
+            categoria = "lendário";
+            document.getElementById ("imagens").innerHTML = imgArray [7]
+            
+            
+        } else  if (idade > 130) {
+            categoria = "imortal";
+            document.getElementById ("imagens").innerHTML = imgArray [8]
+            
+            
+        }
+
+ 
+
+        document.getElementById("idadeid").innerHTML = categoria;
+
+        
+    </script>
+    
+</body>
+</html>

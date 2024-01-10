@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style=" align-items: center; margin-left: auto; justify-content: center;"></div>
+    <input style type="number" value="num" name="num" id="num">
+    <input type="button" value="submit" name="submit" onclick="var idade = (num.value)">
+      </div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+
+   
+    <style>
+        table,td{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+
+    <div style="display:flex; align-items: center; margin-left: auto; justify-content: center;">
+    <p id="idadeid"></p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <tr style="height: 20px; width: 20px;">
+    <div id="imagens"></div>
+        </tr> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <table>
+            <tr>
+                <td>Idade</td> <td>Categoria</td>
+            </tr>
+    
+            <tr>
+                <td>0 - 2</td> <td> Bebé</td>
+            </tr>
+    
+            <tr>
+                <td>2 - 12</td> <td>Criança</td>
+            </tr>
+    
+            <tr>
+                <td>12 - 16</td> <td>Adolescente</td>
+            </tr>
+    
+            <tr>
+                <td>16 - 18</td> <td>Jovem adulto</td>
+            </tr>
+    
+            <tr>
+                <td>18 - 50</td> <td> Adulto</td>
+            </tr>
+    
+            <tr>
+                <td>50 - 65</td> <td> Adulto de meia idade</td>
+            </tr>
+    
+            <tr>
+                <td> > 65 </td> <td> Idoso</td>
+            </tr>
+    
+            <tr>
+                <td> > 100</td> <td> Lendário</td>
+            </tr>
+    
+            <tr>
+                <td> > 130 </td> <td> Imortal</td>
+            </tr>
+        </table>
+    
+    </div>
+    <script>
+    /*       INTRODUZIR IDADE AQUI!!!!                        */
+        var idade = 135      
+    /*       iNTRODUZIR IDADE AQUI!!!!                        */      
+        let categoria;
+
+        var imgArray = new Array();
+
+        imgArray[0] = new Image();
+        imgArray[0].src = './imagens/bebe.jpg';
+
+        imgArray[1] = new Image();
+        imgArray[1].src = './imagens/criança2.jpg';
+
+        imgArray[2] = new Image();
+        imgArray[2].src = './imagens/adolescente3.jpg';
+
+        imgArray[3] = new Image();
+        imgArray[3].src = './imagens/jovemadulto.jpg';
+
+        imgArray[4] = new Image();
+        imgArray[4].src = './imagens/caprio2.jpg';
+ 
+        imgArray[5] = new Image();
+        imgArray[5].src = './imagens/meiaidade3.jpg';
+
+        imgArray[6] = new Image();
+        imgArray[6].src = './imagens/idoso2.jpg';
+
+        imgArray[7] = new Image();
+        imgArray[7].src = './imagens/imortal.jpg';
+
+        imgArray[8] = new Image();
+        imgArray[8].src = './imagens/lendario2.jpg';
+
+
+
+
+        if (idade <= 2) {
+            categoria = "Bebé";
+            document.getElementById ("imagens").appendChild(imgArray [0])
+            
+        } else  if (idade <= 12) {
+            categoria = "Criança";
+            document.getElementById ("imagens").appendChild(imgArray [1]);
+            
+            
+        } else if (idade <= 16){
+            categoria = "Adolescente";
+            document.getElementById ("imagens").appendChild(imgArray [2]);
+
+        } else  if (idade <= 18) {
+            categoria = "Jovem adulto";
+            document.getElementById ("imagens").appendChild(imgArray [3]);
+            
+            
+        } else  if (idade <= 50) {
+            categoria = "Adulto";
+            document.getElementById ("imagens").appendChild(imgArray [4]);
+            
+            
+        } else  if (idade <= 65) {
+            categoria = "Adulto de meia idade";
+            document.getElementById ("imagens").appendChild(imgArray [5]);
+            
+            
+        } else  if (idade < 100) {
+            categoria = "Idoso";
+            document.getElementById ("imagens").appendChild(imgArray [6]);
+            
+            
+        } else  if (idade <= 130) {
+            categoria = "Lendário";
+            document.getElementById ("imagens").appendChild(imgArray [7]);
+            
+            
+        } else  if (idade > 130) {
+            categoria = "Imortal";
+            document.getElementById ("imagens").appendChild(imgArray [8]);
+            
+            
+        }
+
+        document.getElementById("idadeid").innerHTML = categoria;
+
+        
+    </script>
+    
+</body>
+</html>
